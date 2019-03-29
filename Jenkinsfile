@@ -6,5 +6,10 @@ pipeline {
         deleteDir()
       }
     }
+    stage('build') {
+      steps {
+        isUnix()
+      }
+    }
   }
 }
