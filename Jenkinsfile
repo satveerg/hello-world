@@ -8,7 +8,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        isUnix()
+        sh 'echo "Hi muje nind nahi aarahi "'
       }
     }
   }
