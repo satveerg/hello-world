@@ -6,7 +6,7 @@ pipeline {
                 echo 'Hello World'
 
                 script {
-		  codeBuilder = load 'codeBuilder.groovy'
+		  codeBuilder = load './codeBuilder.groovy'
                   codeBuilder.satveer()
                 }
             }
