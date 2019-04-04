@@ -9,6 +9,7 @@ pipeline {
 		  codeBuilder = load './codeBuilder.groovy'
                 }
             }
+        }
         stage('Build') {
 	    steps {
                script {
@@ -18,4 +19,3 @@ pipeline {
                        }
         }
     }
-}
