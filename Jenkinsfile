@@ -7,9 +7,15 @@ pipeline {
 
                 script {
 		  codeBuilder = load './codeBuilder.groovy'
-                  codeBuilder.satveer()
                 }
             }
+        stage('Build') {
+	    steps {
+               script {
+                     codeBuilder.satveer()
+                      }
+                    }
+                       }
         }
     }
 }
