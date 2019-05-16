@@ -7,7 +7,7 @@ pipeline {
             script { 
                 log.info 'Starting'
                 log.warning 'Nothing to do!'
-                sayHello.call
+                // sayHello.call
                 sh 'echo "checking multipipeline trigger"'
             }
         }
