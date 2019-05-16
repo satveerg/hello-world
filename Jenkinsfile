@@ -1,21 +1,15 @@
+@Library('library-roche') _
 pipeline {
-    agent any
+    agent none
     stages {
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-
-                script {
-		  codeBuilder = load './codeBuilder.groovy'
-                }
+    stage ('Example') {
+        steps {
+            script { 
+                log.info 'Starting'
+                log.warning 'Nothing to do!'
+                sayHello.call
             }
         }
-        stage('Build') {
-	    steps {
-               script {
-                     codeBuilder.satveer()
-                      }
-                    }
-                       }
-        }
     }
+}
+}
