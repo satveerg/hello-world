@@ -1,16 +1,21 @@
-@Library('library-roche') _
 pipeline {
-    agent none
+    agent any
+
     stages {
-    stage ('Example') {
-        steps {
-            script { 
-                log.info 'Starting'
-                log.warning 'Nothing to do!'
-                // sayHello.call
-                sh 'echo "checking multipipeline trigger"'
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
-}
 }
