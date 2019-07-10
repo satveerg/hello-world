@@ -14,7 +14,7 @@ pipeline {
         stage('sonar') {
             steps {
                 script{
-                build.sonarrun
+                build.sonarrun()
                 }
             }
         }
