@@ -1,3 +1,4 @@
+@Library('learning-library')
 pipeline {
     agent any
     parameters {
@@ -11,8 +12,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'printenv'
+                build.build()
             }
         }
+    stages {
+        stage('sonar') {
+            steps {
+                build.sonarrun()
+            }
+                       }
+           }    
     }
 }
