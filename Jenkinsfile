@@ -1,18 +1,22 @@
+
 @Library('learning-library') _
+
 pipeline {
     agent any
     stages {
         stage('Build') {
             steps {
+                script{
                 build.build()
+                }
             }
         }
-    stages {
         stage('sonar') {
             steps {
-                build.sonarrun()
+                script{
+                build.sonarrun
+                }
             }
-                       }
-           }    
-    }
+        }
+    }    
 }
