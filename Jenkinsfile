@@ -1,6 +1,6 @@
 
 @Library('learning-library') _
-import com.nbs*
+import com.nbs.*
 pipeline {
     agent any
     stages {
