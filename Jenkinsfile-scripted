@@ -1,6 +1,5 @@
 @Library('learning-library') _
 
 node {
-evenOrOdd.callpipeline()
- 
+evenOrOdd(this)
 }
