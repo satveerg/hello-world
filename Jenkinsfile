@@ -17,5 +17,13 @@ pipeline {
                 }
             }
         }
+        stage('call-hello-step') {
+            steps {
+                script{
+                sayHello.call()
+                }
+            }
+        }
+
     }    
 }
