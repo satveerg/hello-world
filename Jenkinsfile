@@ -1,4 +1,3 @@
-
 @Library('learning-library') _
 pipeline {
     agent any

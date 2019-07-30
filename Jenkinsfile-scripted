@@ -1,5 +1,7 @@
 @Library('learning-library') _
 
 node {
-evenOrOdd
+evenOrOdd.call()
 }
+
+Liveness and Readiness Probes
