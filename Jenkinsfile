@@ -1,2 +1,3 @@
 @Library('learning-library') _
-sayHello
+sayHello{
+}
